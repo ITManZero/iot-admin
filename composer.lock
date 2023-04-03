@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3621ef3150bd944ff767265964045c79",
+    "content-hash": "393e30daacaaaf4ce0ca18f654a179dd",
     "packages": [
         {
             "name": "brick/math",
@@ -983,7 +983,7 @@
         },
         {
             "name": "ite-heros/iot-core",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ITManZero/iot-core.git",
@@ -1004,7 +1004,6 @@
                 "php-amqplib/php-amqplib": "^3.5",
                 "tymon/jwt-auth": "^2.0"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -1028,7 +1027,7 @@
             "description": "Core library includes the most common providers and services",
             "support": {
                 "issues": "https://github.com/ITManZero/iot-core/issues",
-                "source": "https://github.com/ITManZero/iot-core/tree/master"
+                "source": "https://github.com/ITManZero/iot-core/tree/1.0.0"
             },
             "time": "2023-04-03T15:33:13+00:00"
         },
@@ -8497,9 +8496,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "ite-heros/iot-core": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

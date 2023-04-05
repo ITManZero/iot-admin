@@ -983,16 +983,16 @@
         },
         {
             "name": "ite-heros/iot-core",
-            "version": "1.0.7",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ITManZero/iot-core.git",
-                "reference": "7c21ed896157308d3882deb3ab3e16f9e6494c7d"
+                "reference": "b893996987936c8eb14e4d6de158a82617f69322"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ITManZero/iot-core/zipball/7c21ed896157308d3882deb3ab3e16f9e6494c7d",
-                "reference": "7c21ed896157308d3882deb3ab3e16f9e6494c7d",
+                "url": "https://api.github.com/repos/ITManZero/iot-core/zipball/b893996987936c8eb14e4d6de158a82617f69322",
+                "reference": "b893996987936c8eb14e4d6de158a82617f69322",
                 "shasum": ""
             },
             "require": {
@@ -1027,9 +1027,9 @@
             "description": "Core library includes the most common providers and services",
             "support": {
                 "issues": "https://github.com/ITManZero/iot-core/issues",
-                "source": "https://github.com/ITManZero/iot-core/tree/1.0.7"
+                "source": "https://github.com/ITManZero/iot-core/tree/1.0.8"
             },
-            "time": "2023-04-04T12:50:09+00:00"
+            "time": "2023-04-05T11:48:50+00:00"
         },
         {
             "name": "laravel/framework",

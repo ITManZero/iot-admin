@@ -26,10 +26,10 @@ Route::group(['namespace' => 'Auth'], function () {
     Route::post('register', [RegisterController::class, 'register']);
 
 
-    Route::get('publish', function (MessagingService $messagingService) {
+    Route::get('publish', function (MessagingService $messagingService, Request $request) {
 
         $data = (new UserActivityBuilder())
-            ->setId(1)
+            ->setId($request->get('id'))
             ->setAction("blocked")
             ->setIsAdmin(true)
             ->setMessage("Please block this user")
@@ -38,7 +38,10 @@ Route::group(['namespace' => 'Auth'], function () {
 
         $messagingService->publish("user-activity", "blocked", $data);
 
-        return new Response("Success");
+        return new Response(
+            ["message" => "Success",
+                "data" => $data]
+        );
     });
 
 

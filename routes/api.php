@@ -3,8 +3,12 @@
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Route;
+use Ite\IotCore\Builders\UserActivityBuilder;
 use Ite\IotCore\Context\UserActivityContext;
+use Ite\IotCore\Services\MessagingService;
+use PhpAmqpLib\Message\AMQPMessage;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,9 +26,19 @@ Route::group(['namespace' => 'Auth'], function () {
     Route::post('register', [RegisterController::class, 'register']);
 
 
-    Route::get('index', function (UserActivityContext $context) {
-        $context->hasUser(1);
-        return $context->getUsersActivities();
+    Route::get('publish', function (MessagingService $messagingService) {
+
+        $data = (new UserActivityBuilder())
+            ->setId(1)
+            ->setAction("blocked")
+            ->setIsAdmin(true)
+            ->setMessage("Please block this user")
+            ->setName("Bakr Mslmani")
+            ->build();
+
+        $messagingService->publish("user-activity", "blocked", $data);
+
+        return new Response("Success");
     });
 
 

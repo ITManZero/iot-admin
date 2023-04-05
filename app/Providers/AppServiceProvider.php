@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Support\ServiceProvider;
+use PhpAmqpLib\Connection\AMQPStreamConnection;
 
 class AppServiceProvider extends ServiceProvider
 {

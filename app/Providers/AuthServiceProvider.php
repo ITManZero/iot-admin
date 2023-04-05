@@ -3,7 +3,6 @@
 namespace App\Providers;
 
 // use Illuminate\Support\Facades\Gate;
-use App\Guards\AdminJWTGuard;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 
 class AuthServiceProvider extends ServiceProvider
@@ -22,16 +21,6 @@ class AuthServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $this->registerPolicies();
-        $this->app['auth']->extend('jwt', function ($app, $name, array $config) {
-            $guard = new AdminJWTGuard(
-                $app['tymon.jwt'],
-                $app['auth']->createUserProvider($config['provider']),
-                $app['request']);
-            $app->refresh('request', $guard, 'setRequest');
-            return $guard;
-        }
-        );
-        $this->app['auth']->setDefaultDriver('api');
+
     }
 }

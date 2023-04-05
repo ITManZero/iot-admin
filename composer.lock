@@ -983,16 +983,16 @@
         },
         {
             "name": "ite-heros/iot-core",
-            "version": "1.0.0",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ITManZero/iot-core.git",
-                "reference": "3816d77270ba05db7170c4258ea5de03f0ac6479"
+                "reference": "7c21ed896157308d3882deb3ab3e16f9e6494c7d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ITManZero/iot-core/zipball/3816d77270ba05db7170c4258ea5de03f0ac6479",
-                "reference": "3816d77270ba05db7170c4258ea5de03f0ac6479",
+                "url": "https://api.github.com/repos/ITManZero/iot-core/zipball/7c21ed896157308d3882deb3ab3e16f9e6494c7d",
+                "reference": "7c21ed896157308d3882deb3ab3e16f9e6494c7d",
                 "shasum": ""
             },
             "require": {
@@ -1027,9 +1027,9 @@
             "description": "Core library includes the most common providers and services",
             "support": {
                 "issues": "https://github.com/ITManZero/iot-core/issues",
-                "source": "https://github.com/ITManZero/iot-core/tree/1.0.0"
+                "source": "https://github.com/ITManZero/iot-core/tree/1.0.7"
             },
-            "time": "2023-04-03T15:33:13+00:00"
+            "time": "2023-04-04T12:50:09+00:00"
         },
         {
             "name": "laravel/framework",
@@ -2561,16 +2561,16 @@
         },
         {
             "name": "php-amqplib/php-amqplib",
-            "version": "v3.5.2",
+            "version": "v3.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-amqplib/php-amqplib.git",
-                "reference": "703eef998946f4972e630c3e3d827f7cf020fe68"
+                "reference": "bccaaf8ef8bcf18b4ab41e645e92537752b887bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-amqplib/php-amqplib/zipball/703eef998946f4972e630c3e3d827f7cf020fe68",
-                "reference": "703eef998946f4972e630c3e3d827f7cf020fe68",
+                "url": "https://api.github.com/repos/php-amqplib/php-amqplib/zipball/bccaaf8ef8bcf18b4ab41e645e92537752b887bd",
+                "reference": "bccaaf8ef8bcf18b4ab41e645e92537752b887bd",
                 "shasum": ""
             },
             "require": {
@@ -2636,9 +2636,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-amqplib/php-amqplib/issues",
-                "source": "https://github.com/php-amqplib/php-amqplib/tree/v3.5.2"
+                "source": "https://github.com/php-amqplib/php-amqplib/tree/v3.5.3"
             },
-            "time": "2023-03-01T18:03:56+00:00"
+            "time": "2023-04-03T18:25:49+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -3085,25 +3085,25 @@
         },
         {
             "name": "psr/http-message",
-            "version": "1.0.1",
+            "version": "1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
+                "reference": "cb6ce4845ce34a8ad9e68117c10ee90a29919eba",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": "^7.2 || ^8.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -3132,9 +3132,9 @@
                 "response"
             ],
             "support": {
-                "source": "https://github.com/php-fig/http-message/tree/master"
+                "source": "https://github.com/php-fig/http-message/tree/1.1"
             },
-            "time": "2016-08-06T14:39:51+00:00"
+            "time": "2023-04-04T09:50:52+00:00"
         },
         {
             "name": "psr/log",
